@@ -49,7 +49,7 @@ print(poly.geom_type)
 # Create an empty GeoDataFrame
 geo = None
 # YOUR CODE HERE 3
-geo=gpd.GeoDataFrame(index=[0],colums=["geometry"])
+geo=gpd.GeoDataFrame(index=[0],columns=["geometry"])
 geo["geometry"]=poly
 
 # CODE FOR TESTING YOUR SOLUTION
@@ -68,6 +68,8 @@ print(len(geo))
 
 # Plot the polygon. What shape is it :) ?
 # YOUR CODE HERE 4
+geo.plot()
+plt.show()
 
 # What can you see on the map? :) 
 
