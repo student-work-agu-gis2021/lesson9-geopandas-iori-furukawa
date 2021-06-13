@@ -15,6 +15,7 @@ data=gpd.read_file('Kruger_posts.shp')
 # - Reproject the data from WGS84 to `EPSG:32735` -projection which stands for UTM Zone 35S (UTM zone for South Africa) to transform the data into metric system. (don't create a new variable, update the existing variable `data`!)"
 
 # YOUR CODE HERE 2 to set crs
+data=data.to_crs(epsg=32735)
 
 # CODE FOR TESTING YOUR SOLUTION
 
